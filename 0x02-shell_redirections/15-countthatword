@@ -1,2 +1,2 @@
 #!/bin/bash
-grep --regexp="$" --count filename
+grep --regexp="$" --count /etc/passwd
