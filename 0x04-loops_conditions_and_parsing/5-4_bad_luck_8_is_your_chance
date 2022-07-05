@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-# This script is displaying displays bad luck for the 4th loop iteration displays good luck for the 8th loop iteration.
-counter="0"
-while [ $counter -le 9 ]
+# loop from 1 to 10
+count=1
+while [ "$count" -lt 11 ];
 do
-	if [ $counter -eq 3 ];
+	if [ "$count" -eq 4 ]
 	then
 		echo "bad luck"
-	elif [ $counter -eq 7 ];
+	elif [ "$count" -eq 8 ]
 	then
 		echo "good luck"
 	else
 		echo "Best School"
 	fi
-	((counter++))
+	((count++))
 done
