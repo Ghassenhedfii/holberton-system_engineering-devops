@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-#This script is displaying a clock
-hour=0
-while [ $hour -le 12 ]
+# displays time
+h=0
+m=1
+while [ "$h" -lt 13 ];
 do
-    n=1
-    echo "Hour: $hour"
-    while [ $n -le 59 ]
-    do
-        echo "$n"
-        ((n++))
-    done
-    ((hour++)) 
+	((m = 1))
+	echo "Hour: $h"
+	while [ "$m" -lt 60 ];
+	do
+		echo "$m"
+		((m++))
+	done
+	((h++))
 done
-
