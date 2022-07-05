@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# This script is displaying the containt of a file
-for entry in *
+# display files without the dash
+for file in *;
 do
-    [[ -e "$entry" ]] || break
-    echo "$entry" | cut -d"-" -f2
+	echo "$file" | cut -d '-' -f 2
 done
