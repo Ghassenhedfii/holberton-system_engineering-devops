@@ -21,4 +21,3 @@ if __name__ == "__main__":
           name.json().get('name'), done, total))
     for task in tasks:
         print("\t {}".format(task))
-        
