@@ -27,5 +27,5 @@ frontend Local_Server
 backend My_Web_Servers
     mode http
     balance roundrobin
-    server 3681-web-01  50.19.186.136:80 check
-    server 3681-web-02  54.209.4.251:80 check
+    server 3681-web-01  54.167.88.27:80 check
+    server 3681-web-02  54.147.21.157:80 check
